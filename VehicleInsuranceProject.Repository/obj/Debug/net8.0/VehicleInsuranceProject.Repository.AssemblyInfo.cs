@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VehicleInsuranceProject.Repository")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a87509a54aff2c92397e41ccf4312baee63b08f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4f9f099b0a69a381b661e2790292277bac0aeae")]
 [assembly: System.Reflection.AssemblyProductAttribute("VehicleInsuranceProject.Repository")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VehicleInsuranceProject.Repository")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

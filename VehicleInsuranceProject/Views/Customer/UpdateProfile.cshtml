@@ -1,0 +1,50 @@
+﻿@using VehicleInsuranceProject.ViewModels;
+@model CustomerUpdateViewModel;
+
+@{
+    ViewData["Title"] = "Update Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Adjust the layout if needed
+}
+
+<h2 class="text-center">Update Profile</h2>
+<div>
+    <form asp-action="UpdateProfile" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="CustomerId" />
+
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">Name</label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label">Email</label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Phone" class="form-label">Phone</label>
+            <input asp-for="Phone" class="form-control" />
+            <span asp-validation-for="Phone" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Address" class="form-label">Address</label>
+            <textarea asp-for="Address" class="form-control"></textarea>
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+
+        <input type="submit" value="Update" class="btn btn-primary w-100 p-2" />
+        <div class="text-center mt-3">
+            <a asp-controller="Home" asp-action="Index" class="text-decoration-none">Back to Home</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");
+    }
+}
